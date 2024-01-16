@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MpMain<mpAnsiedadeZero>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.mpxds.apps.MpMain",
+            "projectName": "mpAnsiedadeZero",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

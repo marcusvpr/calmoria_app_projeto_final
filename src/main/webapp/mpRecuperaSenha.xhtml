@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <f:facet name="first">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+        </f:facet>
+        <title>Ansiedade Zero - Recuperar Senha</title>
+    </h:head>
+
+    <h:body styleClass="login-body">
+        <div class="body-container">
+            <div class="grid grid-nogutter">
+                <div class="col-12 lg:col-6 left-side">
+                    <!-- p:graphicImage name="#{guestPreferences.darkMode != 'light'? 'images/logo-white.png' : 'images/logo-dark.png'}" library="apollo-layout" -->
+                    <p:graphicImage name="images/ansiedadeZeroCalmoria_logo.jpg" width="90" library="apollo-layout" />
+                    <h1>Calmoria</h1>
+                    <p>
+                       Recuperação de senha
+                    </p>
+                </div>
+                <div class="col-12 lg:col-6 right-side">
+                    <div class="login-wrapper">
+                        <div class="login-container">
+                            <p:graphicImage name="images/ansiedadeZeroCalmoria_logo.jpg" width="180" library="apollo-layout" />
+                            <span class="title">Recuperar Senha</span>
+
+                            <div class="grid ui-fluid">
+                                <div class="col-12">
+                                    <p:inputText placeholder="E-mail" autocomplete="off" />
+                                </div>
+                                <div class="col-6">
+                                    <p:button value="Recuperar" icon="pi pi-check" outcome="mpRecuperaSenha" />
+                                </div>
+                                <div class="col-6">
+                                    <p:button value="Acessar" outcome="mpLogin" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h:outputStylesheet name="css/primeicons.css" library="apollo-layout" />
+        <h:outputStylesheet name="css/primeflex.min.css" library="apollo-layout" />
+        <h:outputStylesheet name="css/layout-cyan-dim.css" library="apollo-layout" />
+    </h:body>
+
+</html>

@@ -1,0 +1,53 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+                
+    <ui:define name="title">Fale com Especialista</ui:define>
+
+    <ui:define name="viewname">
+        <li>Páginas</li> 
+        <li>/</li>
+        <li><p:link outcome="/mpFaleComEspecialista">Especialista</p:link></li>
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="grid">
+            <div class="col-12">
+                <div class="card">
+                    <h4>Especialista</h4>
+                    <p>Encontre e fale com um dos nossos especialista.</p>
+
+                    <p:tabView>
+                        <p:tab title="Psicologia">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </p:tab>
+                        <p:tab title="Psiquiatria">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                        </p:tab>
+                        <p:tab title="Terapeuta & Yoga">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                                quo minus.</p>
+                        </p:tab>
+                        <p:tab title="Nutricionista">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                                quo minus.</p>
+                        </p:tab>
+                        <p:tab title="Personal Trainer">
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                                quo minus.</p>
+                        </p:tab>
+                    </p:tabView>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </ui:define>
+
+</ui:composition>

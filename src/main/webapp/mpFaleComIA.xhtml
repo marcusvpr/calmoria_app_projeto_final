@@ -1,0 +1,73 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+                
+    <ui:define name="title">Fale com a Ans-IA</ui:define>
+
+    <ui:define name="viewname">
+        <li>Páginas</li> 
+        <li>/</li>
+        <li><p:link outcome="/mpFaleComIA">Fale com a Ans-IA</p:link></li>
+    </ui:define>
+
+    <ui:define name="content">
+
+    	<div class="col-12">
+        	<div class="card">
+            	<h5>Fale com a Ans-IA</h5>
+
+                <p:tabView>
+                    <p:tab title="Pergunta/Resposta:">
+		              	<div class="ui-fluid formgrid grid">
+		
+		                    <div class="col-12">
+				            	<p:graphicImage name="images/ans-IA_logo.jpg" width="180" library="apollo-layout" />
+	                    	</div>
+		                    <div class="col-12">
+		                    	<p:outputLabel for="perguntaIA" value="Pergunta:" />
+		                     	<p:inputTextarea id="perguntaIA" rows="2" autocomplete="off"
+		                    		value="Qual uma dica rápida e objetiva, que você daria, para quem está se sentindo muito ansiosa hoje?" />
+		                    </div>
+		
+		                    <div class="field col-12">
+		                    	<p:outputLabel for="respostaIA" value="Resposta:" />
+		                     	<p:inputTextarea id="respostaIA" rows="4" autocomplete="off" readonly="true" 
+		                    		value="Uma dica rápida para lidar com a ansiedade é praticar a respiração profunda. Reserve alguns minutos para inspirar e expirar lentamente, focando na sensação da respiração. Isso pode ajudar a acalmar a mente e reduzir a ansiedade." />
+		                  	</div>
+		
+		                    <div class="col-12">
+		                        <p:button value="Perguntar" icon="pi pi-check" />
+		                    </div>
+		          		</div>
+                	</p:tab>
+                	
+                    <p:tab title="Histórico:">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </p:tab>
+                </p:tabView>
+
+         	</div>
+         </div>
+    </ui:define>
+
+</ui:composition>

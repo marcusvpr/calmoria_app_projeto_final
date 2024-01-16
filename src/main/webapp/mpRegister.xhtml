@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <f:facet name="first">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+        </f:facet>
+        <title>Ansiedade Zero - Criar Conta</title>
+    </h:head>
+
+    <h:body styleClass="login-body">
+    
+        <p:tooltip />
+
+        <p:growl id="growl" showDetail="true"/> 
+    
+        <div class="body-container">
+            <div class="grid grid-nogutter">
+
+                <div class="col-12 lg:col-6 left-side">
+                    <!-- p:graphicImage name="#{guestPreferences.darkMode != 'light'? 'images/logo-white.png' : 'images/logo-dark.png'}" library="apollo-layout" -->
+                    <p:graphicImage name="images/ansiedadeZeroCalmoria_logo.jpg" width="90" library="apollo-layout" />
+                    <h1>Calmoria</h1>
+                    <p>
+                       Crie sua conta e inicie sua sessão
+                    </p>
+                </div>
+
+                <div class="col-12 lg:col-6 right-side">
+					<p:spacer width="100" height="10" />
+                    <div class="login-wrapper">
+							                   	
+	                   	<p:graphicImage name="images/ansiedadeZeroCalmoria1_logo.jpg" width="250" library="apollo-layout" />
+
+	                 	<h5>Crie sua conta ...</h5>
+
+	                    <h:form>
+	                        <p:outputPanel id="grid">
+	                            <div class="field grid">
+	                                <p:outputLabel for="firstname" styleClass="col-fixed" value="Primeiro Nome :" />
+	                                <div class="col">
+	                                    <p:inputText id="firstname" required="true" requiredMessage="Campo é obrigatório" />
+	                                    <p:message for="firstname" />
+	                                </div>
+	                            </div>
+	                            <div class="field grid">
+	                                <p:outputLabel for="lastname" styleClass="col-fixed" value="Último nome :" />
+	                                <div class="col">
+	                                    <p:inputText id="lastname" required="true" />
+	                                    <p:message for="lastname" display="icon" />
+	                                </div>
+	                            </div>
+	                            <div class="field grid">
+	                                <p:outputLabel for="email" styleClass="col-fixed" value="E-mail :" />
+	                                <div class="col">
+	                                    <p:inputText id="email" required="true" />
+	                                    <p:message for="email" display="icon" />
+	                                </div>
+	                            </div>
+	                            <div class="field grid">
+	                                <p:outputLabel for="celular" styleClass="col-fixed" value="Celular :" />
+	                                <div class="col">
+	                                    <p:inputText id="celular" required="true" />
+	                                    <p:message for="celular" display="icon" />
+	                                </div>
+	                            </div>
+	                            <div class="field grid">
+	                                <p:outputLabel for="password" styleClass="col-fixed" value="Senha :" />
+	                                <div class="col">
+                                    	<p:password id="password" autocomplete="off" feedback="false" required="true" />
+	                                    <p:message for="password" display="icon" />
+	                                </div>
+	                            </div>
+	                            <div class="field grid">
+	                                <p:outputLabel for="passwordConfirm" styleClass="col-fixed" value="Repita senha :" />
+	                                <div class="col">
+                                    	<p:password id="passwordConfirm" autocomplete="off" feedback="false" required="true" />
+	                                    <p:message for="passwordConfirm" display="icon" />
+	                                </div>
+	                            </div>
+	                            <div class="field grid">
+		                        	<p:commandButton id="submitButton" value="Criar Conta" icon="pi pi-check" update="grid" />
+									<p:spacer width="30" height="10" />
+	                         		<p:button value="Acessar Login" outcome="mpLogin" />
+	                            </div>
+	                        </p:outputPanel>        
+	                    </h:form>
+	            	</div>
+				</div>
+            </div>
+        </div>
+
+        <h:outputStylesheet name="css/primeicons.css" library="apollo-layout" />
+        <h:outputStylesheet name="css/primeflex.min.css" library="apollo-layout" />
+        <h:outputStylesheet name="css/layout-cyan-dim.css" library="apollo-layout" />
+    </h:body>
+
+</html>

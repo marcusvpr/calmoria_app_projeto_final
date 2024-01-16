@@ -1,0 +1,28 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+                
+    <ui:define name="title">Enquete</ui:define>
+
+    <ui:define name="viewname">
+        <li>Páginas</li> 
+        <li>/</li>
+        <li><p:link outcome="/mpEnquete">Enquetes</p:link></li>
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="grid">
+            <div class="col-12">
+                <div class="card">
+                    <h4>Enquete</h4>
+                    <p>Responda nossas enquetes e descubra seu grau de ansiedade agora.</p>
+                </div>
+            </div>
+        </div>
+        
+    </ui:define>
+
+</ui:composition>

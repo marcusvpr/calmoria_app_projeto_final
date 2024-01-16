@@ -1,0 +1,28 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:f="http://java.sun.com/jsf/core"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+                
+    <ui:define name="title">Atividade</ui:define>
+
+    <ui:define name="viewname">
+        <li>Páginas</li> 
+        <li>/</li>
+        <li><p:link outcome="/mpAtividade">Atividades</p:link></li>
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="grid">
+            <div class="col-12">
+                <div class="card">
+                    <h4>Atividades</h4>
+                    <p>Registre aqui suas atividades.</p>
+                </div>
+            </div>
+        </div>
+        
+    </ui:define>
+
+</ui:composition>

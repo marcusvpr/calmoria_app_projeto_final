@@ -1,0 +1,152 @@
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:pa="http://primefaces.org/apollo">
+
+    <div class="topbar clearfix">
+        <h:link id="logolink" outcome="/mpDashboard" styleClass="topbar-logo">
+            <p:graphicImage styleClass="logo" library="apollo-layout" name="images/ansiedadeZeroCalmoria1_logo.jpg" />
+        </h:link>
+        <a id="menu-button" href="#">
+            <i class="pi pi-align-left"/>
+        </a>
+            
+        <a href="#" class="profile">
+            <span class="username">Brunna Rodrigues</span>
+            <p:graphicImage name="images/avatar.png" library="apollo-layout" />
+        </a>
+        
+        <span class="topbar-search">
+            <h:form>
+                <p:inputText placeholder="Busca"/>
+                <span class="pi pi-search"/>
+            </h:form>
+        </span>
+
+        <ul class="topbar-menu fadeInDown">
+            <li>
+                <a href="#">
+                    <i class="topbar-icon pi pi-user"/>
+                    <span class="topbar-item-name">Perfil</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-user"/>
+                            <span>Perfil dados</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-eye"/>
+                            <span>Privacidade</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-cog"/>
+                            <span>Configuração</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-sign-out"/>
+                            <span>Sair Sistema</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="topbar-icon pi pi-cog"/>
+                    <span class="topbar-item-name">Configuração</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-bookmark"/>
+                            <span>Favoritos</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-lock"/>
+                            <span>Bloquear Tela</span>
+                            <span class="topbar-badge">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="topbar-icon pi pi-envelope"/>
+                    <span class="topbar-item-name">Messagens</span>
+                    <span class="topbar-badge">5</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message">
+                            <p:graphicImage name="images/avatar1.png" library="apollo-layout" width="35"/>
+                            <span>Faça uma ligação</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message">
+                            <p:graphicImage name="images/avatar2.png" library="apollo-layout" width="35"/>
+                            <span>Relatórios</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message">
+                            <p:graphicImage name="images/avatar2.png" library="apollo-layout" width="35"/>
+                            <span>Reunião</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#" class="topbar-message">
+                            <p:graphicImage name="images/avatar4.png" library="apollo-layout" width="35"/>
+                            <span>Fora do escritório</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="topbar-icon pi pi-bell"/>
+                    <span class="topbar-item-name">Notifications</span>
+                    <span class="topbar-badge">2</span>
+                </a>
+                <ul>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-list"/>
+                            <span>Tarefas pendentes</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-calendar"/>
+                            <span>Reunião de hoje</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-download"/>
+                            <span>Download</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="#">
+                            <i class="pi pi-ticket"/>
+                            <span>Livro de bordo</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</ui:composition>
